@@ -1,11 +1,3 @@
-/**
-* Template Name: Delicious
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -32,6 +24,44 @@ h5,
 h6 {
   font-family: "Satisfy", sans-serif;
 }
+
+.banner {
+	margin-left: calc(50% - 50vw);
+	width: 100vw; height: 62.5vmin;
+	min-height: 15em;
+	background: linear-gradient(#000, transparent, #000), 
+		var(--img) 50%/ cover;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
+	
+	&:nth-of-type(1) {
+		--img: url(https://images.unsplash.com/photo-1476097297040-79e9e1603142?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+	}
+
+    &:nth-of-type(2) {
+		--img: url(https://images.unsplash.com/photo-1530915493757-0677252ffeee?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ)
+	}
+	
+	&:nth-of-type(3) {
+		--img: url(https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ)
+	}
+	
+	
+	
+	&:nth-of-type(4) {
+		--img: url(https://images.unsplash.com/photo-1525124541374-b7eaf79d0dbf?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ)
+	}
+}
+/*------------------------------------
+            ABOUT SECTION
+-------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
