@@ -4,6 +4,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #444444;
+  background-color: #9580a1;
 }
 
 a {
@@ -16,13 +17,8 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Satisfy", sans-serif;
+.banner {
+  width: 75%;
 }
 
 .banner {
@@ -53,6 +49,15 @@ h6 {
 	}
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Satisfy", sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -63,7 +68,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffb03b;
+  background: #8faf9e;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -151,15 +156,14 @@ h6 {
 #header .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
+  font-family: "Satisfy", sans-serif;
+
 }
 
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
 }
-
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -177,6 +181,8 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  font-family: "Satisfy", sans-serif;
+  font-size: 28px;
 }
 
 .navbar li {
@@ -381,7 +387,6 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -581,18 +586,23 @@ section {
 /*--------------------------------------------------------------
 # Work Experience
 --------------------------------------------------------------*/
+.section-title h2 {
+color: #79ba44;
+}
+
 .Work .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
   height: 100%;
+  background-color: #535c6a;
 }
 
-.Work .box span {
+.Work .box h2 {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #ffcf88;
+  color: #79ba44;
 }
 
 .Work .box h4 {
@@ -600,18 +610,18 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #6c665c;
+  color: #de8b8c;
 }
 
 .Work .box p {
-  color: #aaaaaa;
+  color: whitesmoke;
   font-size: 15px;
   margin: 0;
   padding: 0;
 }
 
 .Work .box:hover {
-  background: #ffb03b;
+  background: #8faf9e;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -784,9 +794,28 @@ section {
 # Gallery
 --------------------------------------------------------------*/
 /* ======= Gallery Section ======= */
+#gallery h1 {
+  font-family: "Satisfy", sans-serif;
+  color: #79ba44;
+}
+
+#gallery h2 {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #79ba44;
+}
+
+#gallery p {
+  color: whitesmoke;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
 #gallery .article-wrapper {
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  background-color: #fff; 
+  background-color: #535c6a; 
   box-shadow: none; 
   padding: 20px; 
   margin: 10px; 
@@ -795,7 +824,7 @@ section {
 }
 
 #gallery .article-wrapper:hover {
-  background: #ffb03b;
+  background: #8faf9e;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
@@ -920,4 +949,136 @@ Generic layout (demo looks)
 
 #footer .copyright {
   margin: 0 0 5px 0;
+}
+
+/*----------------------------------------------
+#Contact
+----------------------------------------------*/
+h1, h4, input, textarea, .styled-input label, .submit-btn, input[type=checkbox] + label, input[type=checkbox]:checked + label {
+  font-family: 'Bebas Neue', cursive; /* Change to your desired font */
+}
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #9b9b9b;
+  line-height: 1.5;
+}
+
+h2 {
+  font-weight: 400;
+  color: #79ba44;
+  line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .styled-input {
+      width: 100%;
+  }
+}
+
+.styled-input label {
+  color: #8faf9e;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide {
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #535c6a;
+  color: white;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  float: right;
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: #8faf9e;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06),
+      0 2px 10px 0 rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10),
+      0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+      width: 100%;
+      float: none;
+      text-align: center;
+  }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+}
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
 }
