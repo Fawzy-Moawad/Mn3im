@@ -625,9 +625,15 @@ color: #79ba44;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
+.Work .box:hover  h2{
+  color: #535c6a;
+}
+
+.Work .box:hover  h4{
+  color: #9580a1;
+}
 
 .Work .box:hover span,
-.Work .box:hover h4,
 .Work .box:hover p {
   color: #fff;
 }
