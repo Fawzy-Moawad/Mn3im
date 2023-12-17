@@ -9,7 +9,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #ffb03b;
+  color: #9580a1;
 }
 
 a:hover {
@@ -746,33 +746,7 @@ color: #79ba44;
 .about-section .about-section-item h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #ffb03b;
-}
-
-.about-section .about-section-item .price {
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.about-section .about-section-item .price span {
-  border-bottom: 2px solid #ffb03b;
-}
-
-.about-section .about-section-item ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about-section .about-section-item ul li {
-  padding-bottom: 10px;
-}
-
-.about-section .about-section-item ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #ffb03b;
+  color: #6ca935;
 }
 
 .about-section .about-section-item p:last-child {
@@ -792,7 +766,7 @@ color: #79ba44;
 }
 
 .about-section .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffb03b;
+  background-color: #9580a1;
 }
 
 
