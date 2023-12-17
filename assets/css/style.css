@@ -891,3 +891,64 @@ input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
 }
+
+
+/*-------------------------------------------------------------
+#AWARDS SECTION 
+-------------------------------------------------------------*/
+.Work .box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+  background-color: #535c6a;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.Work .box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Add rounded corners if desired */
+}
+
+.Work .box-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.Work .box h2 {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #79ba44;
+  margin-bottom: 10px;
+}
+
+/* Add more styles for additional details if needed */
+
+/* Additional styles for responsive layout */
+@media screen and (max-width: 960px) {
+  .Work .box {
+    container: card/inline-size;
+  }
+  .Work .box-details {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .Work .box {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 16px;
+  }
+  .Work .box img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px; /* Add rounded corners if desired */
+  }
+}
+/* END AWARDS SECTION */
