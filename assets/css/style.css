@@ -688,13 +688,13 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.events {
+.about-section {
   background: url(../img/00.webp) center center no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.events::before {
+.about-section::before {
   content: "";
   background-color: rgba(12, 11, 10, 0.8);
   position: absolute;
@@ -704,78 +704,78 @@ section {
   bottom: 0;
 }
 
-.events .section-title h2 {
+.about-section .section-title h2 {
   color: #fff;
 }
 
-.events .container {
+.about-section .container {
   position: relative;
 }
 
 @media (min-width: 1024px) {
-  .events {
+  .about-section {
     background-attachment: fixed;
   }
 }
 
-.events .events-carousel {
+.about-section .about-section-carousel {
   background: rgba(255, 255, 255, 0.08);
   padding: 30px;
 }
 
-.events .event-item {
+.about-section .about-section-item {
   color: #fff;
 }
 
-.events .event-item h3 {
+.about-section .about-section-item h3 {
   font-weight: 600;
   font-size: 26px;
   color: #ffb03b;
 }
 
-.events .event-item .price {
+.about-section .about-section-item .price {
   font-size: 26px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.events .event-item .price span {
+.about-section .about-section-item .price span {
   border-bottom: 2px solid #ffb03b;
 }
 
-.events .event-item ul {
+.about-section .about-section-item ul {
   list-style: none;
   padding: 0;
 }
 
-.events .event-item ul li {
+.about-section .about-section-item ul li {
   padding-bottom: 10px;
 }
 
-.events .event-item ul i {
+.about-section .about-section-item ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #ffb03b;
 }
 
-.events .event-item p:last-child {
+.about-section .about-section-item p:last-child {
   margin-bottom: 0;
 }
 
-.events .swiper-pagination {
+.about-section .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.events .swiper-pagination .swiper-pagination-bullet {
+.about-section .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
 
-.events .swiper-pagination .swiper-pagination-bullet-active {
+.about-section .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ffb03b;
 }
 
@@ -783,98 +783,30 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
-.gallery {
-  padding-bottom: 0;
+/* ======= Gallery Section ======= */
+#gallery .article-wrapper {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #fff; 
+  box-shadow: none; 
+  padding: 20px; 
+  margin: 10px; 
+  border-radius: 0;
+  cursor: pointer; 
 }
 
-.gallery .gallery-item {
-  overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+#gallery .article-wrapper:hover {
+  background: #ffb03b;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-
-article {
-  --img-scale: 1.001;
-  --title-color: black;
-  --link-icon-translate: -20px;
-  --link-icon-opacity: 0;
-  position: relative;
-  border-radius: 16px;
-  box-shadow: none;
-  background: #fff;
-  transform-origin: center;
-  transition: all 0.4s ease-in-out;
-  overflow: hidden;
+#gallery .article-wrapper:hover h2,
+#gallery .article-wrapper:hover p {
+  color: #fff;
 }
 
-article a::after {
-  position: absolute;
-  inset-block: 0;
-  inset-inline: 0;
-  cursor: pointer;
-  content: "";
+#gallery .article-wrapper:hover .read-more {
+  color: #35322d; 
 }
-
-/* basic article elements styling */
-article h2 {
-  margin: 0 0 18px 0;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.9rem;
-  letter-spacing: 0.06em;
-  color: var(--title-color);
-  transition: color 0.3s ease-out;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-}
-
-article img {
-  max-width: 100%;
-  transform-origin: center;
-  transform: scale(var(--img-scale));
-  transition: transform 0.4s ease-in-out;
-}
-
-.article-body {
-  padding: 24px;
-}
-
-article a {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  color: #28666e;
-}
-
-article a:focus {
-  outline: 1px dotted #28666e;
-}
-
-article a .icon {
-  min-width: 24px;
-  width: 24px;
-  height: 24px;
-  margin-left: 5px;
-  transform: translateX(var(--link-icon-translate));
-  opacity: var(--link-icon-opacity);
-  transition: all 0.3s;
-}
-
-/* using the has() relational pseudo selector to update our custom properties */
-article:has(:hover, :focus) {
-  --img-scale: 1.1;
-  --title-color: #28666e;
-  --link-icon-translate: 0;
-  --link-icon-opacity: 1;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-
-
 /************************ 
 Generic layout (demo looks)
 **************************/
@@ -884,7 +816,6 @@ Generic layout (demo looks)
 *::after {
   box-sizing: border-box;
 }
-
 
 .articles {
   display: grid;
@@ -896,7 +827,7 @@ Generic layout (demo looks)
 }
 
 @media screen and (max-width: 960px) {
-  article {
+  .articles article {
     container: card/inline-size;
   }
   .article-body p {
@@ -926,14 +857,17 @@ Generic layout (demo looks)
 }
 
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
+
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
