@@ -63,7 +63,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ffc064;
+  background: #9580a1;
   color: #fff;
 }
 
@@ -135,7 +135,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #8faf9e;
+  color: #79ba44;
   text-decoration: none;
   font-family: "Satisfy", sans-serif;
 
@@ -952,3 +952,99 @@ input[type=checkbox]:checked + label {
   }
 }
 /* END AWARDS SECTION */
+
+
+/*----------------------------------------------------
+#Gallery Page
+----------------------------------------------------*/
+*, p, h2, form, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#pastry h1 {
+  font-family: Satisfy, sans-serif;
+  color: #79ba44;
+}
+
+#cake h1 {
+  font-family: Satisfy, sans-serif;
+  color: #79ba44;
+}
+
+#bakery h1 {
+  font-family: Satisfy, sans-serif;
+  color: #79ba44;
+}
+
+
+img {
+  max-width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tag {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0afdd8;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 0 0 15px 0;
+  z-index: 9999;
+}
+
+.tag a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tag img {
+  width: 30px;
+  height: 30px;
+}
+
+.main {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.box {
+  flex: 0 1 calc(33.33% - 20px);
+  margin-bottom: 15px;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box:hover img {
+  transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+  .box {
+      flex: 0 1 calc(50% - 20px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+      flex: 0 1 calc(25% - 20px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .box {
+      flex: 0 1 calc(16.666% - 20px);
+  }
+}
