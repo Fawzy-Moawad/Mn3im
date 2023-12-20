@@ -973,17 +973,7 @@ input[type=checkbox]:checked + label {
   box-sizing: border-box;
 }
 
-#pastry h1 {
-  font-family: Satisfy, sans-serif;
-  color: #79ba44;
-}
-
-#cake h1 {
-  font-family: Satisfy, sans-serif;
-  color: #79ba44;
-}
-
-#bakery h1 {
+#pastry h1, #cake h1, #bakery h1 {
   font-family: Satisfy, sans-serif;
   color: #79ba44;
 }
