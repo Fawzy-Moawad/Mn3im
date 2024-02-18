@@ -584,14 +584,13 @@ color: #79ba44;
 .about-section .about-section-item h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #6ca935;
+  color: #9580a1;
 }
 
 .about-section .about-section-item p {
   font-weight: 500;
   font-size: 20px;
-  color: #9580a1;
-  font-family: "Satisfy", sans-serif;
+  color: #fff;
 }
 .about-section .about-section-item p:last-child {
   margin-bottom: 0;
@@ -672,6 +671,30 @@ color: #79ba44;
   padding: 0;
 }
 
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  #gallery .articles {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid layout for smaller screens */
+    gap: 16px; /* Reduce gap between grid items */
+  }
+
+  #gallery .article-wrapper {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  #gallery h1 {
+    font-size: 20px; /* Reduce font size for heading on smaller screens */
+  }
+
+  #gallery h2 {
+    font-size: 18px; /* Reduce font size for article titles on smaller screens */
+  }
+
+  #gallery p {
+    font-size: 14px; /* Reduce font size for article descriptions on smaller screens */
+  }
+}
 /************************ 
 Generic layout (demo looks)
 **************************/
